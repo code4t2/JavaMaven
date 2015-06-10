@@ -2,9 +2,14 @@ package com.code4t2;
 
 public class Hello {
 
-	public static void main(String[] args) {
+	public static void sayHello(String x) {
 
-		System.out.println("Hi Titu");
+		if(x !=null && !x.trim().isEmpty())
+			System.out.println("Hi "+ x);
+		else
+			System.out.println("Hi Titu");
 	}
+	
+	
 
 }
