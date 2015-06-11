@@ -13,7 +13,7 @@ public class TestHello {
 	
 	@Before
 	public void init(){
-		//x="Sachin";
+		x="Sachin";
 	}
 	
 	@Test
@@ -21,7 +21,7 @@ public class TestHello {
 	public void test1(){
 		
 		Hello.sayHello(x);
-		LOGGER.debug("HAHAHHAH");
+		LOGGER.debug("HAHAHAHA");
 		LOGGER.info("FYI!");
 	}
 	
