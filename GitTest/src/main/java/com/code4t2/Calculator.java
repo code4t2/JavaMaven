@@ -5,7 +5,7 @@ public class Calculator {
 	public static final int add(final String numberString) {
 		
 		int returnValue = 0;
-		String[] numbersArray = numberString.split(",");
+		String[] numbersArray = numberString.split(",|n");
 		
 //		if(numbersArray.length > 2) {
 //			throw new RuntimeException("Up to two numbers separated by commas (,) are allowed");

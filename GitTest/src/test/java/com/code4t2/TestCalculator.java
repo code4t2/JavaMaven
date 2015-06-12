@@ -43,5 +43,10 @@ public final class TestCalculator {
 	public final void whenAnyNumberOfNumbersAreUsedThenTheSumIsReturned() {
 		Assert.assertEquals(1+2+3+4+5, Calculator.add("1,2,3,4,5"));
 	}
+	
+	@Test
+	public final void whenNewLineIsUsedBetweenNumbersThenReturnValuesAreTheirSums() {
+		Assert.assertEquals(1+2+3, Calculator.add("1,2n3"));
+	}
 
 }
