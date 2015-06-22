@@ -23,6 +23,7 @@ public class TestHello {
 		Hello.sayHello(x);
 		LOGGER.debug("HAHAHAHA");
 		LOGGER.info("FYI!");
+		LOGGER.warn("This is the end of the world");
 	}
 	
 }
