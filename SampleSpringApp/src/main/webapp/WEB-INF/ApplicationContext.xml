@@ -10,10 +10,10 @@
 	<context:component-scan base-package="com.code4t2.simplespringapp.business, com.code4t2.simplespringapp.dao" />
 	
 	<bean id="dataSourceObject" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="oracle.jdbc.OracleDriver" />
-        <property name="url" value="jdbc:oracle:thin:@localhost:1521:ORCL" />
-        <property name="username" value="system" />
-        <property name="password" value="abcd" />
+        <property name="driverClassName" value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+        <property name="url" value="jdbc:sqlserver://SPICITY966:1433;databaseName=Northwind;" />
+        <property name="username" value="sa" />
+        <property name="password" value="$picity12345" />
 	</bean>
 	
 	<bean id="homeDaoObject" class="com.code4t2.simplespringapp.dao.HomeDaoImpl">

@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.code4t2.simplespringapp.business.HomeBusiness;
@@ -20,7 +21,7 @@ public class HomeController {
 		this.homeBusinessVaribaleName = homeBusinessVaribaleName;
 	}
 
-	@RequestMapping()
+	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView loadHomePage(HttpServletRequest request, HttpServletResponse response) throws Exception {	
 		return new ModelAndView("home", "homePageModel", this.homeBusinessVaribaleName.getCustomers());
 	}

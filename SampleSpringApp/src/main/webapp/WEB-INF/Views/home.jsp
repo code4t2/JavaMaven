@@ -13,13 +13,17 @@
 	<body>
 		<table border="1">
 			<tr>
-				<td>Customer ID</td>
-				<td>Contact Name</td>
-				<td>Company name</td>
+				<td><b>Customer ID</b></td>
+				<td><b>Contact Name</b></td>
+				<td><b>Company name</b></td>
 			</tr>
 			
-			<c:forEach items="${homePageModel.">
-			
+			<c:forEach items="${homePageModel}" var="customerDTO">
+				<tr>
+					<td>${customerDTO.customerId}</td>
+					<td>${customerDTO.contactName}</td>
+					<td>${customerDTO.companyName}</td>
+				</tr>
 			</c:forEach>
 		</table>
 	</body>
