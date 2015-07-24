@@ -27,5 +27,8 @@
 	<bean id="homeControllerObject" class="com.code4t2.simplespringapp.controller.HomeController">
 		<property name="homeBusinessVaribaleName" ref="homeBusinessObject" />
 	</bean>
+	
+	<bean id="" class="com.code4t2.simplespringapp.controller.AboutController">
+	</bean>
 
 </beans>

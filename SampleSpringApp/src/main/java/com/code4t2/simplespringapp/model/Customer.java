@@ -6,6 +6,18 @@ public class Customer {
 	private String contactName;
 	private String companyName;
 	
+	public Customer() {
+	}
+
+	public Customer(String contactName) {
+		this.contactName = contactName;
+	}
+	
+	public Customer(String customerId, String contactName, String companyName) {
+		this.customerId = customerId;
+		this.contactName = contactName;
+		this.companyName = companyName;
+	}
 	/**
 	 * @return the customerId
 	 */
